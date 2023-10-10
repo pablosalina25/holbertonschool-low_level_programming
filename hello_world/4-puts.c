@@ -2,12 +2,15 @@
 
 /**
  *
- * Write a C program that prints
- *  */
+ * main this is a main on the function
+ * descripction this is a description
+ * return (0)
 
-int main() {
+int main (
+		)
+{
 
 puts ("Programming is like building a multilingual puzzle)
 
+return (0)
 }
- return (0)
