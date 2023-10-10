@@ -1,16 +1,11 @@
-#include <stdio.h>
-
+#include<stdio.h>
 /**
+ * main - Entry point
  *
- * main this is a main on the function
- * descripction this is a description
- * return (0)
+ * Return: Always 0 (Success)
  */
-
-int main (void)
+int main(void)
 {
-
-puts ("Programming is like building a multilingual puzzle)
-
-return (0)
+	puts("Programming is like building a multilingual puzzle);
+	return (0);
 }
