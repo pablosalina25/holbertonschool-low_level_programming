@@ -5,9 +5,9 @@
  * main this is a main on the function
  * descripction this is a description
  * return (0)
+ */
 
-int main (
-		)
+int main (void)
 {
 
 puts ("Programming is like building a multilingual puzzle)
