@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char letra_mayuscula;
+	char letra;
 
 	for (letra = 'A'; letra <= 'Z'; letra++)
 		putchar(letra);
