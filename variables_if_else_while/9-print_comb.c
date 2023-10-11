@@ -13,6 +13,7 @@
 	{
 	putchar(numero);
 		putchar(',');
+		putchar(' ');
 
 	putchar('\n');
 	}
