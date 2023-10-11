@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 	int main(void
-			char letra;)
+	char letra;
 	{
 		for (letra = 'a'; letra <= 'z' ; letra++)
 		{
