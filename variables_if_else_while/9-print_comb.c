@@ -9,10 +9,10 @@
 {
 	int numero;
 
-	for (numero = 48; numero <= 57; numero++)
+	for (numero = '0'; numero <= '9'; numero++)
 	{
 	putchar(numero);
-	if (numero < 57)
+	if (numero < 9)
 		putchar(',');
 		putchar(' ');
 
