@@ -10,9 +10,9 @@ int main(void)
 	char letra;
 	int numero;
 
-	for (letra = 'a'; letra <= 'f'; letra++)
+	for (letra = '0'; letra <= '9'; letra++)
 		putchar(letra);
-	for (numero = '0'; numero <= '9'; numero++)
+	for (numero = 'a'; numero <= 'f'; numero++)
 		putchar(numero);
 	putchar('\n');
 	return (0);
