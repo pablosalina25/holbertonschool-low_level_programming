@@ -13,9 +13,10 @@
 	{
 	putchar(numero);
 	if (numero != '9')
+	{
 		putchar(',');
 		putchar(' ');
-
+	}
 	putchar('\n');
 	}
 	return (0);
