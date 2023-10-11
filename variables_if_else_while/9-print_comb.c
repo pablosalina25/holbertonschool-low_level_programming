@@ -12,7 +12,9 @@
 	for (numero = 48; numero <= 57; numero++)
 	{
 	putchar(numero);
+	if (numero < 57)
 		putchar(',');
+		putchar(' ');
 
 	putchar('\n');
 	}
