@@ -9,7 +9,7 @@ void jack_bauer(void)
 {
 	int c;
 
-	for (c = 0 ; c <= 23 ; c++)
+	for (c = 48 ; c <= 50,51 ; c++)
 	{
 		_putchar(c);
 	}
