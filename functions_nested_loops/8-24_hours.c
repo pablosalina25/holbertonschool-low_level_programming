@@ -13,12 +13,10 @@ void jack_bauer(void)
 	{
 		_putchar(c);
 	}
-	_putchar ('\n');
 	for (c = 0 ; c <= 59 ; c++)
 	{
 		_putchar(c);
 	}
-	_putchar ('\n');
 	{
 	_putchar(c);
 	}
