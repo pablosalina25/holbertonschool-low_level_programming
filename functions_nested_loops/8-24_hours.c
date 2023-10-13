@@ -9,11 +9,11 @@ void jack_bauer(void)
 {
 	int c;
 
-	for (c = '0' ; c <= '23' ; c++)
+	for (c = 0 ; c <= 23 ; c++)
 	{
 		_putchar(c);
 	}
-	for (c = '0' ; c <= '59' ; c++)
+	for (c = 0 ; c <= 59 ; c++)
 	{
 		_putchar(c);
 	}
