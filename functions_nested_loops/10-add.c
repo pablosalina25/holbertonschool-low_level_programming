@@ -1,7 +1,11 @@
 #include "main.h"
 /**
- * int add(int, int); Write a function that adds two integers
+ * add - Write a function that adds two integers
  * Return num3
+ * @num1:number
+ * @num2:number
+ * @num3: add num1 + num2
+ *
  */
 int add(int num1, int num2)
 {
