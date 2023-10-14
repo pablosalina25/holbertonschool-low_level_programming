@@ -1,0 +1,5 @@
+# My first makefiles
+
+all:school
+school: a.out m.h main.c school.c
+	gcc -o school a.out m.h main.c school.c
