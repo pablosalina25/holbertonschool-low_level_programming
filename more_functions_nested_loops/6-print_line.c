@@ -18,4 +18,9 @@ void print_line(int n)
 	{
 	_putchar('\n');
 	}
+	else (n < 0 )
+	{
+		_putchar('\n');
+	}
+	}
 }
