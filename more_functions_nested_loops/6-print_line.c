@@ -2,7 +2,7 @@
 
 /**
  * print_line - draws a straight line in the terminal.
- * @i: the number of times the character _ should be printed
+ * @n: the number of times the character _ should be printed
  *
  * Return: If i is 0 or less, the function should only print \n
  */
