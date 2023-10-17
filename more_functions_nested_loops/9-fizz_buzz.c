@@ -1,29 +1,36 @@
 #include <stdio.h>
 
 /**
- * Write a program that prints the numbers from 1 to 100, followed by a new line
+ * main - Entry point
  *
+ * Description: Prints numbers from 1 to 100 with FizzBuzz
  *
+ * Return: Always 0 (Success)
  */
-int main ()
+int main(void)
 {
-	for ( n >0 ; n <=100; n++){
-		printf ("n \n" );
+	int n;
+
+	for (n = 1; n <= 100; n++)
+	{
+	if (n % 3 == 0 && n % 5 == 0)
+	{
+	printf("FizzBuzz ");
 	}
-			if (n / 3 = % 0)
-			{
-				printf ("Fizz \n");
-			}
-			else if (n / 5 = % 0)
-			{
-				printf ("Buzz \n");
-			}
-			else if n / 3 = %0 && n / 5 = %0)
-			{
-			
-			
-				printf ("FizzBuzz \n");
-			}
+	else if (n % 3 == 0)
+	{
+	printf("Fizz ");
+	}
+	else if (n % 5 == 0)
+	{
+	printf("Buzz ");
+	}
+	else
+	{
+	printf("%d ", n);
+	}
+	}
+	printf("\n");
 
 	return (0);
 }
