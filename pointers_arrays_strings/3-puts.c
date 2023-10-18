@@ -2,9 +2,11 @@
 #include <stdio.h>
 
 /**
- * void _puts - a function that prints a string.
- * @str: The input string
- * Return: the string
+ * _puts - Prints a string.
+ * @str: The input string to be printed.
+ *
+ * Description: This function prints the given
+ * string to the standard output.
  */
 void _puts(char *str)
 {
