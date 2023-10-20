@@ -8,14 +8,15 @@
 void rev_string(char *s)
 {
 	int longitud = 0;
+	int inicio = 0;
+	int fin = 0;
 
 	while (s[longitud] != '\0')
 	{
 	longitud++;
 	}
-	int inicio = 0;
-	int fin = longitud - 1;
-
+	inicio = 0;
+	fin = longitud - 1;
 	while (inicio < fin)
 	{
 	char temp = s[inicio];
