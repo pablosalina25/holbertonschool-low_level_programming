@@ -11,6 +11,7 @@ void rev_string(char *s)
 {
 	int longitud = 0;
 	int a;
+
 	while (*s != '\0')
 	{
 		longitud++;
@@ -18,6 +19,6 @@ void rev_string(char *s)
 	}
 	s--;
 	for (a = longitud; a > 0; a--)
-		a--
+		a--;
 	{
 }
