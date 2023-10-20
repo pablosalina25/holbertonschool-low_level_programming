@@ -7,18 +7,17 @@
  */
 
 void rev_string(char *s)
-{
-	char invierte = s[0];
-	int contador = 0;
-	int i;
 
-	while (s[contador] != '\0')
-	contador++;
-	for (i = 0; i < contador; i++)
+{
+	int longitud = 0;
+	int a;
+	while (*s != '\0')
 	{
-		contador--;
-		rev = s[i];
-		s[i] = s[contador];
-		s[contador] = rev;
+		longitud++;
+		s++;
 	}
+	s--;
+	for (a = longitud; a > 0; a--)
+		a--
+	{
 }
