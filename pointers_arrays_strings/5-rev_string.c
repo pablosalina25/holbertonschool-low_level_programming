@@ -5,20 +5,24 @@
  * @s: Input string
  * Return: String in reverse
  */
-
 void rev_string(char *s)
-
 {
 	int longitud = 0;
-	int a;
 
-	while (*s != '\0')
+	while (s[longitud] != '\0')
 	{
-		longitud++;
-		s++;
+	longitud++;
 	}
-	s--;
-	for (a = longitud; a > 0; a--)
-		a--;
+	int inicio = 0;
+	int fin = longitud - 1;
+
+	while (inicio < fin)
 	{
+	char temp = s[inicio];
+
+	s[inicio] = s[fin];
+	s[fin] = temp;
+	inicio++;
+	fin--;
+	}
 }
