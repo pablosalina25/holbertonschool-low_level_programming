@@ -9,7 +9,7 @@
  * Description: This function prints the string
  * in reverse
  */
-kiiiiiiivoid print_rev(char *s)
+void print_rev(char *s)
 {
 	int i,mitad,len;
 	len = strlen(s)
