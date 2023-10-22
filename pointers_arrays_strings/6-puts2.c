@@ -17,5 +17,5 @@ void _puts(char *str)
 	putchar(str[length]);
 	length++;
 	}
-	putchar('\n'); // Agregar un salto de línea al final
+	putchar('\n');
 }
