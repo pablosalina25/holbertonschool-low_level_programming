@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 /**
- * _puts - Prints a string.
- * @str: The input string to be printed.
- *
- * Description: This function prints the given
- * string to the standard output.
+ * puts2 - Imprime cada 2do carácter de una cadena,
+ * empezando por el primer carácter.
+ * @str: La cadena de entrada.
  */
-void _puts(char *str)
+void puts2(char *str)
 {
-	int length = 0;
+	int i = 0;
 
-	while (str[length] != '\0')
+	while (str[i] != '\0')
 	{
-	putchar(str[length]);
-	length++;
+	if (i % 2 == 0)
+	{
+	putchar(str[i]);
 	}
-	putchar('\n');
+	i++;
+	}
 }
