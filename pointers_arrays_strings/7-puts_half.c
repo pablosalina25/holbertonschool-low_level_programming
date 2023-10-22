@@ -7,13 +7,12 @@
 void puts_half(char *str)
 {
 	int longitud = 0;
+	int n = longitud / 2;
 
 	while (str[longitud] != '\0')
 	{
 	longitud++;
 	}
-	int n = longitud / 2;
-
 	if (longitud % 2 != 0)
 	{
  	n++;
