@@ -14,8 +14,8 @@ void _puts(char *str)
 
 	while (str[length] != '\0')
 	{
+	putchar(str[length]);
 	length++;
-		if (str == % 0)
 	}
-	puts(str);
+	putchar('\n'); // Agregar un salto de línea al final
 }
