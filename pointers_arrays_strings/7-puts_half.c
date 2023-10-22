@@ -1,12 +1,13 @@
 #include "main.h"
+
 /**
- * puts_half - Print second half of a string, followed by a new line.
- * @str: Input string.
+ * puts_half - Imprime la segunda mitad de una cadena
+ * @str: La cadena de entrada.
  */
 void puts_half(char *str)
 {
 	int longitud = 0;
-	int inicio;
+	int inicio, i;
 
 	while (str[longitud] != '\0')
 	{
@@ -20,7 +21,7 @@ void puts_half(char *str)
 	{
 	inicio = (longitud - 1) / 2;
 	}
-	for (int i = inicio; str[i] != '\0'; i++)
+	for (i = inicio; str[i] != '\0'; i++)
 	{
 	_putchar(str[i]);
 	}
