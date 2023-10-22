@@ -9,17 +9,17 @@
 int _atoi(char *s)
 {
 	int n = 0;
-	int sign = 1;
+	int signo = 1;
 
 	while (*s)
 	{
 		if (*s == '-')
 		{
-			sign = -sign;
+			signo = -signo;
 		}
 		else if (*s >= '0' && *s <= '9')
 		{
-			n = n * 10 + (*s - '0') * sign;
+			n = n * 10 + (*s - '0') * signo;
 		}
 		else if (n != 0)
 		{
