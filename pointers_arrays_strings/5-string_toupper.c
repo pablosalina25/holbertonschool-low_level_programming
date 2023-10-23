@@ -9,8 +9,8 @@
  */
 char *string_toupper(char *str)
 {
-	if (str == NULL)
-	return (NULL);
+	if (str == 0)
+	return (0);
 
 	for (int i = 0; str[i] != '\0'; i++)
 	{
