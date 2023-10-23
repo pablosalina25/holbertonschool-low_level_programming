@@ -2,20 +2,30 @@
 #include <ctype.h>
 
 /**
- * cap_string - Capitalizes all words of a string.
+ * cap_string - Capitalizes the first letter of each word in a string.
  * @str: The string to be capitalized.
  */
 char *cap_string(char *str)
 {
-	int ine = 0;
+	int index = 0;
+	int capitalize_next = 1;
 
-	while (str[ine])
+	while (str[index])
 	{
-	if (ine == 0 || isspace(str[ine - 1]) || ispunct(str[ine - 1]))
-	str[ine] = toupper((unsigned char)str[ine]);
+	if (isspace((unsigned char)str[index]) || ispunct((unsigned char)str[index]))
+	{
+	capitalize_next = 1;
+	}
+	else if (capitalize_next)
+	{
+	str[index] = toupper((unsigned char)str[index]);
+	capitalize_next = 0;
+	}
 	else
-	str[ine] = tolower((unsigned char)str[ine]);
-	ine++;
+	{
+	str[index] = tolower((unsigned char)str[index]);
+	}
+	index++;
 	}
 	return (str);
 }
