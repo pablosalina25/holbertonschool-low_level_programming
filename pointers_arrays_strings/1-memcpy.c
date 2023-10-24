@@ -6,10 +6,13 @@
  * @src: Pointer to the source memory
  * @n: Number of bytes to copy
  *
+ * Return: A pointer to the destination memory (i.e., 'dest')
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	for (unsigned int i = 0; i < n; i++)
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
 	{
 	dest[i] = src[i];
 	}
