@@ -7,25 +7,6 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	if (!haystack || !needle)
-	{
-	return (NULL);
-	}
-	while (*haystack)
-	{
-	char *hays = haystack;
-	char *need = needle;
-
-	while (*need && *hays == *need
-		{
-	hays++;
-	need++;
-	}
-	if (*need == '\0') 
-	{
-	return (haystack);
-	}
-	haystack++;
-	}
-	return (NULL);
+	while (*haystack != '\0')
+		haystack++;
 }
