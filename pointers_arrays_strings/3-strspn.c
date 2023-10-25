@@ -3,6 +3,7 @@
 /**
  * _strspn - gets the length of a prefix substring.
  * @s: input
+ * @accept: consist only of bytes
  * Return: Always o (Sucess)
  */
 
