@@ -3,11 +3,12 @@
 
 /**
  * _strstr - a function that locates a substring.
- * @str: The string to be capitalized.
+ * @haystack: The string to be searched in.
+ * @needle: The substring to be located.
  *
- * Return:a pointer to the beginning of the located substring
+ * Return: a pointer to the beginning of the located
+ * substring, or NULL if not found.
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack != '\0')
@@ -20,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 	lim++;
 	pim++;
 	}
-	if (*p == '\0')
+	if (*pim == '\0')
 	return (haystack);
 	haystack++;
 	}
