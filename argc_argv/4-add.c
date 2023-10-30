@@ -6,12 +6,12 @@
  * main - a program that adds positive numbers.
  * @argc: The number of command-line arguments.
  * @argv: An array of strings containing the arguments.
- *
  * Return: 0 (Success), 1 (Error)
  */
+
 int main(int argc, char *argv[])
 {
-	int suma = 0;
+	int sum = 0;
 
 	if (argc == 1)
 	{
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		return (1);
 		}
 	}
-	suma += atoi(argv[i]);
+	sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
