@@ -8,28 +8,28 @@
  * @argv: An array of strings containing the arguments.
  * Return: 0 (Success), 1 (Error)
  */
-
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int suma = 0;
+	int a, b;
 
 	if (argc == 1)
 	{
 	printf("0\n");
 	return (0);
 	}
-	for (int i = 1; i < argc; i++)
+	for (a = 1; a < argc; a++)
 	{
-	for (int j = 0; argv[i][j] != '\0'; j++)
+	for (b = 0; argv[a][b] != '\0'; b++)
 	{
-	if (!isdigit(argv[i][j]))
-		{
+	if (!isdigit(argv[a][b]))
+	{
 		printf("Error\n");
 		return (1);
-		}
 	}
-	sum += atoi(argv[i]);
 	}
-	printf("%d\n", sum);
+	suma += atoi(argv[a]);
+	}
+	printf("%d\n", suma);
 	return (0);
 }
