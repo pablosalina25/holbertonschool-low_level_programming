@@ -3,9 +3,17 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * alloc_grid - a function that returns a pointer
+ * to a 2 dimensional array of integers.
+ * @width: The width of the grid.
+ * @height: The height of the grid.
+ * Return: A pointer to the allocated 2D grid,
+ * or NULL on failure.
+ */
 int **alloc_grid(int width, int height)
 {
-	int a, b;
+	int lim, bit;
 	int **s;
 
 	if (width < 1 || height < 1)
@@ -16,35 +24,35 @@ int **alloc_grid(int width, int height)
 	{
 	free(s);
 	return (NULL);
-    }
-	a = 0;
-	while (a < height)
+	}
+	lim = 0;
+	while (lim < height)
 	{
-	s[a] = (int *)malloc(sizeof(int) * width);
+	s[lim] = (int *)malloc(sizeof(int) * width);
 
-	if (!s[a])
+	if (!s[lim])
 	{
-	b = 0;
-	while (b < height)
+	bit = 0;
+	while (bit < height)
 	{
-		free(s[b]);
-		b++;
+		free(s[bit]);
+		bit++;
 	}
 	free(s);
 	return (NULL);
 	}
-	a++;
+	lim++;
 	}
-	a = 0;
-	while (a < height)
+	lim = 0;
+	while (lim < height)
 	{
-	b = 0;
-	while (b < width)
+	bit = 0;
+	while (bit < width)
 	{
-	s[a][b] = 0;
-	b++;
+	s[lim][bit] = 0;
+	bit++;
 	}
-	a++;
+	lim++;
 	}
 	return (s);
 }
