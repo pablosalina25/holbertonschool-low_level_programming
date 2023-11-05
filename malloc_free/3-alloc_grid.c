@@ -1,26 +1,50 @@
-#include <stdlib.h>
 #include "main.h"
-/**
- * free_grid - Frees a 2-dimensional grid previously
- * created by alloc_grid.
- * @grid: The 2D grid to be freed.
- * @height: The height dimension of the grid.
- *
- * Description: This function frees the memory allocated
- *  for a 2D grid
- * previously created by the alloc_grid
- * function.
- */
-void free_grid(int **grid, int height)
-{
-	int Z;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-	if (grid != NULL)
+int **alloc_grid(int width, int height)
+{
+	int a, b;
+	int **s;
+
+	if (width < 1 || height < 1)
+	return (NULL);
+	s = (int **)malloc(sizeof(int *) * height);
+
+	if (!s)
 	{
-		for (Z = 0; height > Z; Z++)
-		{
-			free(grid[Z]);
-		}
-		free(grid);
+	free(s);
+	return (NULL);
+    }
+	a = 0;
+	while (a < height)
+	{
+	s[a] = (int *)malloc(sizeof(int) * width);
+
+	if (!s[a])
+	{
+	b = 0;
+	while (b < height)
+	{
+		free(s[b]);
+		b++;
 	}
+	free(s);
+	return (NULL);
+	}
+	a++;
+	}
+	a = 0;
+	while (a < height)
+	{
+	b = 0;
+	while (b < width)
+	{
+	s[a][b] = 0;
+	b++;
+	}
+	a++;
+	}
+	return (s);
 }
