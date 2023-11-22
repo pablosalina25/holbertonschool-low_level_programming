@@ -13,10 +13,6 @@ size_t list_len(const list_t *h)
 
 	while (h)
 	{
-		if (!h->len)
-		printf("[0] (nill)\n");
-		else
-		printf("[%u] %i\n", h->len, h->len);
 		h = h->next;
 		elementos_list++;
 }
