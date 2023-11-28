@@ -33,15 +33,7 @@ list_t *add_node_end(head, str)
     }
 
     endnode->len = strlen(str);
-    endnode->next = NULL;
-
-    if (*head == NULL)
-	{
-	*head = endnode;
- 	return (endnode);
-	}
-
-	tmp->next = endnode;
+ 	endnode->next = NULL;
 
 	return (endnode);
 }
