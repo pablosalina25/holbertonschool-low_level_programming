@@ -6,38 +6,27 @@
  * @str: The string.
  * Return: Address of the new element or NULL if it fails.
  */
-list_t *add_node_end(head, str)
-    list_t **head;
-    const char *str;
+list_t *add_node_end(list_t **head, const char *str)
 {
-    if (!str)
-        return (NULL);
+	if (!str)
+	return (NULL);
 
-    list_t *endnode;
-    endnode = malloc(sizeof(list_t));
-    if (!endnode)
-    {
-        free(endnode);
-        return (NULL);
-    }
+	list_t *endnode;
 
-    endnode->str = strdup(str);
-    endnode->len = strlen(str);
-    endnode->next = NULL;
+	endnode = malloc(sizeof(list_t));
 
-    if (*head == NULL)
-    {
-        *head = endnode;
-        return (endnode);
-    }
+	if (!endnode)
+	{
+	free(endnode);
+	return (NULL);
+	}
+	endnode->str = strdup(str);
+	endnode->len = strlen(str);
+	endnode->next = NULL;
 
-    list_t *tmp;
-    for (tmp = *head; tmp->next; tmp = tmp->next)
-    {
-    }
-
-    tmp->next = endnode;
-
-    return (endnode);
+	if (*head == NULL)
+	{
+	*head = endnode;
+	return (endnode);
+	}
 }
-
