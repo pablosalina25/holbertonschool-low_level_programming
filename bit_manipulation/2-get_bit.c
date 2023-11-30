@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * get_bit - Returns the value of a bit at a specified index.
- * @num: Number to evaluate.
- * @idx: Index (starting from 0) of the bit to retrieve.
+ * get_bit - Retrieves the value of a bit at a specific index.
+ * @n: Number to evaluate.
+ * @index: Index (starting from 0) of the bit to get.
  * Return: The value of the bit at the given index, or -1 on error.
  */
-int get_bit(unsigned long int num, unsigned int idx)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int shiftedNum;
+	unsigned long int shifted_n;
 
-	if (idx > 64)
+	if (index > 64)
 		return (-1);
 
-	shiftedNum = num >> idx;
-	return (shiftedNum & 1);
+	shifted_n = n >> index;
+	return (shifted_n & 1);
 }
