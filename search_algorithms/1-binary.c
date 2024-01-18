@@ -9,24 +9,27 @@
  * Return: If the value is not present or the array is NULL, -1.
  * Otherwise, the index where the value is located.
  */
-int binary_search(int *array, size_t size, int value)
+int binary_search(int *array, size_t array_size, int target_value)
 {
-	if (array == NULL || size == 0)
+	size_t low_index, high_index, mid_index;
+
+	if (array == NULL || array_size == 0)
 	return (-1);
 
-	size_t low = 0, high = size - 1, mid;
+	low_index = 0;
+	high_index = array_size - 1;
 
-	while (low <= high)
+	while (low_index <= high_index)
 	{
-	mid = low + (high - low) / 2;
+	mid_index = low_index + (high_index - low_index) / 2;
 
-	if (array[mid] == value)
-	return (mid);
+	if (array[mid_index] == target_value)
+	return (mid_index);
 
-	if (array[mid] < value)
-	low = mid + 1;
+	if (array[mid_index] < target_value)
+	low_index = mid_index + 1;
 	else
-	high = mid - 1;
+	high_index = mid_index - 1;
 	}
 
 	return (-1);
